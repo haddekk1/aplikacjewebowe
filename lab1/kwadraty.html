@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ćwiczenie 3 - kolorowe kwadraty</title>
+    <style>
+      .kwadrat {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .kolor1 { background-color: #3092d3; } 
+      .kolor2 { background-color: #efc920; } 
+      .kolor3 { background-color: #27d690; } 
+      .kolor5 { background-color: #c82a2a; } 
+      
+      .obrazek {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      .wiersz {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main style="padding: 20px;">
+      <h1>Kolorowe kwadraty</h1>
+      
+      <div class="wiersz">
+        <div class="kwadrat kolor1"></div>
+        <div class="kwadrat kolor2"></div>
+      </div>
+      
+      <div class="wiersz">
+        <div class="kwadrat kolor3"></div>
+        <img src="./kwadraty.jpg" alt="Zastępczy obrazek" class="obrazek">
+        <div class="kwadrat kolor5"></div>
+      </div>
+      
+      <br>
+      <a href="./index.html">Wróć do strony głównej</a>
+    </main>
+  </body>
+</html>
