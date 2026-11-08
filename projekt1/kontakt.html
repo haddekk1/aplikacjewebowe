@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poradnik Linux - Kontakt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Poradnik Linux na Start</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Skontaktuj się ze mną!</h2>
+      <p>Masz problem z wyborem dystrybucji? Znalazłeś błąd na stronie? Napisz!</p>
+      
+      <form id="contactForm" class="contact-form">
+        <label for="email">E-Mail:</label>
+        <input type="text" id="email" placeholder="Twój adres e-mail" />
+
+        <label for="subject">Temat wiadomości:</label>
+        <select id="subject">
+          <option value=""> Wybierz temat </option>
+          <option value="Pomoc w wyborze">Pomoc w wyborze dystrybucji</option>
+          <option value="Błąd na stronie">Zgłoszenie błędu na stronie</option>
+          <option value="Inne">Inne pytanie</option>
+        </select>
+
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" placeholder="Wpisz treść swojej wiadomości"></textarea>
+
+        <input type="submit" value="Wyślij" />
+      </form>
+      
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Piotr Gawin</p>
+  </footer>
+
+  <script src="kontakt.js"></script>
+</body>
+</html>

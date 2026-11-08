@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poradnik Linux - Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Poradnik Linux na Start</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Która dystrybucja jest dla ciebie?</h2>
+      <p>Odpowiedz na 3 proste pytania, a dostaniesz podpowiedź, 
+        którą dystrybucję z galerii powinieneś wybrać na start.</p>
+    </section>
+
+    <div id="saved-result-box" class="result-box" style="display: none;">
+      <h3>Masz już swój wynik!</h3>
+      <p>Już rozwiązałeś quiz. Twój polecany system to: <strong id="saved-distro"></strong></p>
+      <button id="reset-quiz-btn" class="btn-link" style="margin-top: 15px;">Rozwiąż ponownie</button>
+    </div>
+
+    <form id="quiz-form" class="quiz-form">
+      
+      <div class="question-block">
+        <h3>1. Czego najbardziej oczekujesz od nowego systemu?</h3>
+        <label><input type="radio" name="q1" value="mint"> Chcę, żeby z wyglądu bardzo przypominał Windowsa.</label><br>
+        <label><input type="radio" name="q1" value="zorin"> Zależy mi na nowoczesnym, pięknym i dopracowanym wyglądzie.</label><br>
+        <label><input type="radio" name="q1" value="ubuntu"> Chcę czegoś popularnego, by łatwo znaleźć pomoc w internecie.</label><br>
+        <label><input type="radio" name="q1" value="fedora"> Chcę nowoczesnego i stabilnego systemu do programowania.</label>
+      </div>
+
+      <div class="question-block">
+        <h3>2. Jakie będzie główne zastosowanie Twojego komputera?</h3>
+        <label><input type="radio" name="q2" value="ubuntu"> Uniwersalne - trochę gier i przeglądanie internetu.</label><br>
+        <label><input type="radio" name="q2" value="mint"> Proste prace biurowe i przeglądanie sieci.</label><br>
+        <label><input type="radio" name="q2" value="fedora"> Praca w IT, nauka programowania.</label><br>
+        <label><input type="radio" name="q2" value="zorin"> Zależy mi głównie na multimediach i estetyce.</label>
+      </div>
+
+      <div class="question-block">
+        <h3>3. Jaki jest Twój poziom doświadczenia technicznego?</h3>
+        <label><input type="radio" name="q3" value="mint"> Jestem zupełnie początkujący.</label><br>
+        <label><input type="radio" name="q3" value="ubuntu"> Znam podstawy, ale wolę, żeby wszystko działało od razu.</label><br>
+        <label><input type="radio" name="q3" value="zorin"> Lubię personalizować system pod siebie.</label><br>
+        <label><input type="radio" name="q3" value="fedora"> Lubię nowinki technologiczne i częste aktualizacje.</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Sprawdź wynik</button>
+      <p id="quiz-error" style="color: red; margin-top: 10px; font-weight: bold;"></p>
+    </form>
+
+    <div id="new-result-box" class="result-box" style="display: none; margin-top: 30px;">
+      <h2>Twój idealny Linux to: <span id="new-distro" style="color: #15370D;"></span></h2>
+      <p>Sprawdź naszą <a href="galeria.html">Galerię</a>, aby zobaczyć jak wygląda i jak go zainstalować.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Piotr Gawin</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

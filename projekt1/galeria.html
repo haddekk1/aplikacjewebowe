@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poradnik Linux - Galeria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Poradnik Linux na Start</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="galeria.html" class="active">Galeria</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Przegląd popularnych dystrybucji</h2>
+      <p>Zobacz, jak wyglądają domyślne środowiska graficzne w systemach polecanych dla początkujących. Wybierz ten, który najbardziej Ci się podoba!</p>
+    </section>
+
+    <section class="gallery-grid">
+      
+      <!--mint-->
+      <div class="gallery-card">
+        <img src="mint.png" alt="pulpit linux mint" />
+        <h3>Linux Mint</h3>
+        <p>Najbardziej polecany dla początkujących. 
+          Z wyglądu i zachowania bardzo przypomina klasycznego Windowsa, 
+          co sprawia, że przesiadka jest bezbolesna.</p>
+        <a href="https://itsfoss.com/install-linux-mint/" target="_blank" rel="noopener noreferrer" class="btn-link">Poradnik instalacji</a>
+      </div>
+
+      <!--zorin-->
+      <div class="gallery-card">
+        <img src="zorinos.jpg" alt="pulpit zorin os" />
+        <h3>Zorin OS</h3>
+        <p>System stworzony z myślą o estetach. 
+          Jest niesamowicie dopracowany wizualnie i pozwala łatwo upodobnić wygląd do Windowsa lub macOS.</p>
+        <a href="https://help.zorin.com/docs/getting-started/install-zorin-os/" target="_blank" rel="noopener noreferrer" class="btn-link">Poradnik instalacji</a>
+      </div>
+
+      <!--ubuntu-->
+      <div class="gallery-card">
+        <img src="ubuntu.jpg" alt="pulpit ubuntu" />
+        <h3>Ubuntu</h3>
+        <p>Najpopularniejsza dystrybucja na świecie. Posiada ogromną społeczność, co oznacza, że jeśli napotkasz jakikolwiek problem, rozwiązanie na pewno jest już w sieci.</p>
+        <a href="https://ubuntu.com/desktop/docs/en/latest/tutorial/install-ubuntu-desktop/" target="_blank" rel="noopener noreferrer" class="btn-link">Poradnik instalacji</a>
+      </div>
+
+      <!--fedora-->
+      <div class="gallery-card">
+        <img src="fedora.jpg" alt="pulpit fedora" />
+        <h3>Fedora</h3>
+        <p>Nowoczesny i bardzo stabilny system, z którego chętnie korzystają programiści. 
+          Oferuje zawsze najnowsze oprogramowanie i czyste środowisko GNOME.</p>
+        <a href="https://docs.fedoraproject.org/en-US/beginners-guide/install_fedora/" target="_blank" rel="noopener noreferrer" class="btn-link">Poradnik instalacji</a>
+      </div>
+
+    </section>
+
+    <section class="video-section">
+      <h2>Zobacz, jak łatwo zmienić system</h2>
+      <p>
+        Przesiadka na Linuksa nie musi być trudna, a usunięcie poprzedniego systemu to proces, który zajmuje tylko chwilę. Zobacz krótki materiał wideo pokazujący, jak to wygląda w praktyce.
+      </p>
+      
+      <video controls preload="metadata">
+        <source src="delete_windows.mp4" type="video/mp4">
+        Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+      </video>
+      
+      <p class="video-source">
+        <small>Źródło materiału: <a href="https://www.youtube.com/watch?v=W68-v6FSwaQ" target="_blank" rel="noopener noreferrer">YouTube</a></small>
+      </p>
+
+      <p class="external-link" style="margin-top: 20px;">
+        <strong>Przeczytaj krok po kroku: </strong> 
+        <a href="https://www.digitalcitizen.life/how-uninstall-windows-8-windows-7-or-any-other-version-windows/" target="_blank" rel="noopener noreferrer">Jak bezpiecznie odinstalować Windowsa</a>
+      </p>
+
+      <p class="external-link" style="margin-top: 20px;">
+        <strong>Dla ambitnych:</strong>
+        <a href="https://www.linuxfromscratch.org/" target="_blank" rel="noopener noreferrer">Linux From Scratch</a>
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Piotr Gawin</p>
+  </footer>
+
+  <div id="image-modal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="expanded-img" alt="duze zdjecie">
+  </div>
+
+  <script src="galeria.js"></script>
+</body>
+</html>
+
+</body>
+</html>
